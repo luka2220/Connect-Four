@@ -8,6 +8,14 @@ def create_board():
     return board
 
 
+def drop_piece():
+    pass
+
+
+def is_valid_location():
+    pass
+
+
 # main game loop
 board = create_board()  # initializing an empty board
 game_over = False   # will switch to True if a player connected four
@@ -22,3 +30,5 @@ while not game_over:
     else:
         selection = int(input("Player 2 Make your Selection (0-6):"))
 
+    turn += 1
+    turn = turn % 2
